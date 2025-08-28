@@ -1,0 +1,49 @@
+print ("Bienvenido a la calculadora de Tilin")
+
+def menu():
+
+    print ("1.mostrar numeros del 1 al 100\n,2.mostrar numero de 2 en 2 hasta el 100\n,3.Mostrar numeros del 100 al 1\n,4.iteraflex\n,5.Salir\n")
+
+def delunoalcien():
+    i = 0
+    while i <= 10:
+        print (i)
+        i+=1
+
+def dedosendos():
+    i = 0
+    while i <= 100:
+        print (i)
+        i+=2
+
+def detresentres():
+    i = 0
+    while i <= 100:
+        print (i)
+        i+=3
+def iteraflex():
+    i = int(input("ingrese el numero que sera el iterador"))
+    limit = int(input("ingres el numero que sera el limite"))
+    num = int(input("ingrese el numero que sumara al iterador"))
+    while i <= limit:
+        print (i)
+        i+= num
+
+while True:
+    menu()
+    op = int(input("Ingrese la opción que desea tomar: "))
+    
+    if op == 1:
+        delunoalcien()
+    elif op == 2:
+        dedosendos()
+    elif op == 3:
+        detresentres()
+    elif op == 4:
+        iteraflex()
+    elif op  == 5:
+       
+       print("Gracias por usar la calculadora de ciclos while de Tilin. ¡Hasta luego!")
+       break
+    else:
+        print("Opción no válida. Por favor, elija una opción entre 1 y 5.")
